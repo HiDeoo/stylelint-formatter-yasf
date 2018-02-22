@@ -1,0 +1,58 @@
+{
+  "name": "stylelint-formatter-yasf",
+  "version": "0.0.1",
+  "description": "Yet Another Stylelint Formatter",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage && open coverage/index.html",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write ./*.js"
+  },
+  "keywords": [
+    "stylelint",
+    "formatter",
+    "stylelint-formatter",
+    "reporter",
+    "lint",
+    "validate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/stylelint-formatter-yasf"
+  },
+  "bugs": {
+    "url": "https://github.com/HiDeoo/stylelint-formatter-yasf/issues"
+  },
+  "homepage": "https://github.com/HiDeoo/stylelint-formatter-yasf",
+  "author": "HiDeo",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "4.18.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-jest": "21.12.2",
+    "eslint-plugin-prettier": "2.6.0",
+    "husky": "0.14.3",
+    "jest": "22.4.0",
+    "lint-staged": "7.0.0",
+    "prettier": "1.10.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "chalk": "2.3.1",
+    "lodash": "4.17.5",
+    "log-symbols": "2.2.0",
+    "pluralize": "7.0.0",
+    "string-width": "2.1.1",
+    "table": "4.0.2"
+  }
+}

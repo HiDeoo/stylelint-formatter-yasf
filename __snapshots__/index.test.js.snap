@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not output columns if not provided 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should not output file names if not provided 1`] = `
+"
+[2m3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should not output lines & columns if not provided 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should not output symbols for unknown sevirity 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m     You should not have an empty block   [2mblock-no-empty[22m
+
+"
+`;
+
+exports[`should not try to get the relative path if starting with "<" 1`] = `
+"
+[4m<path/to/file.css>[24m
+ [2m<path/to/file.css>:3:12[22m  [31m✖[39m  You should not have an empty block  [2mblock-no-empty[22m 
+                                                                                
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output 1 warning 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output deprecations 1`] = `
+"
+[33mDeprecated rule: [39mFeature X has been deprecated and will be removed in the next major version.
+[33mDeprecated rule: [39mFeature Y has been deprecated and will be removed in the next major version.
+[4m[24m
+[4mSummary:[24m[33m[39m
+[33m [34mℹ[33m 2 deprecations[39m
+
+"
+`;
+
+exports[`should output invalid options 1`] = `
+"
+[31mInvalid option: [39mInvalid option X for rule Y.
+[31mInvalid option: [39mInvalid option A for rule B.
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [34mℹ[31m 2 invalid options[39m
+
+"
+`;
+
+exports[`should output long warning when less than 80 columns are available 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  A very very very very very very very  [2mblock-no-empty[22m 
+                           very very very very very very very v                 
+                           ery very very very long error                        
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output long warning when more than 80 columns are available 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  A very very very very very very very  [2mblock-no-empty[22m 
+                           very very very very very very very v                 
+                           ery very very very long error                        
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output multiple warnings 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m   [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:44:22[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
+
+exports[`should output nothing when not necessary 1`] = `""`;
+
+exports[`should output parseErrors as warnings 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block (block-no-empt    
+                           y)                                                   
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output warning without TTY 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m
+
+"
+`;
+
+exports[`should output warnings and errors 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m   [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:44:22[22m  [33m⚠[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m[33m[39m
+[33m [33m⚠[33m 1 warning[39m
+
+"
+`;
+
+exports[`should properly order errors and warnings 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:1:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
+
+exports[`should properly order errors and warnings 2`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:1:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:3:12[22m  [33m⚠[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m[33m[39m
+[33m [33m⚠[33m 1 warning[39m
+
+"
+`;
+
+exports[`should properly order errors and warnings 3`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:1:12[22m  [33m⚠[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 1 error[39m[33m[39m
+[33m [33m⚠[33m 1 warning[39m
+
+"
+`;
+
+exports[`should properly order errors on different lines 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:4:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
+
+exports[`should properly order errors on different lines 2`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:1:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
+
+exports[`should properly order errors on the same line 1`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:3:22[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
+
+exports[`should properly order errors on the same line 2`] = `
+"
+[4mpath/to/file.css[24m
+ [2mpath/to/file.css:3:3[22m   [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+ [2mpath/to/file.css:3:12[22m  [31m✖[39m  You should not have an empty block   [2mblock-no-empty[22m 
+[4m[24m
+[4mSummary:[24m[31m[39m
+[31m [31m✖[31m 2 errors[39m
+
+"
+`;
