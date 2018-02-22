@@ -8,6 +8,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage && open coverage/index.html",
+    "test:codecov": "yarn run test --coverage --runInBand && codecov",
     "precommit": "lint-staged",
     "prettier": "prettier --write ./*.js"
   },
@@ -30,6 +31,7 @@
   "author": "HiDeo",
   "license": "MIT",
   "devDependencies": {
+    "codecov": "3.0.0",
     "eslint": "4.18.1",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-prettier": "2.9.0",

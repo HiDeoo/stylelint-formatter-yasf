@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/yasf
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          key: yasf-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: yasf-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - run:
+          name: Lint
+          command: yarn run lint
+      - run:
+          name: Test
+          command: yarn run test:codecov
